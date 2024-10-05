@@ -17,7 +17,24 @@
         "command": "helloworld.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "helloworld-view-container",
+          "title": "Helloworld",
+          "icon": "src/static/image/stock.svg"
+        }
+      ]
+    },
+    "views": {
+      "helloworld-view-container": [
+        {
+          "id": "helloworld-view",
+          "name": "Helloworld View"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
