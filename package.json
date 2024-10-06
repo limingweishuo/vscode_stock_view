@@ -40,6 +40,18 @@
         {
           "id": "helloworld-view",
           "name": "Helloworld View"
+        },
+        {
+          "id": "view1",
+          "name": "View One"
+        },
+        {
+            "id": "view2",
+            "name": "View Two"
+        },
+        {
+            "id": "view3",
+            "name": "View Three"
         }
       ]
     }
