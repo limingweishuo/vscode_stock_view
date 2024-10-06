@@ -1,14 +1,30 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log('Congratulations, your extension "helloworld" is now active!');
+    console.log('Extension is now active!');
 
-	const disposable = vscode.commands.registerCommand('helloworld.helloWorld', () => {
-		vscode.window.showInformationMessage('Hello World from helloworld!');
-	});
+    // 注册 command1，绑定到 featureOne
+    const command1 = vscode.commands.registerCommand('extension.command1', () => {
+        featureOne();
+    });
 
-	context.subscriptions.push(disposable);
+    // 注册 command2，绑定到 featureTwo
+    const command2 = vscode.commands.registerCommand('extension.command2', () => {
+        featureTwo();
+    });
+
+    // 将命令加入 context.subscriptions 中，以确保插件被释放时注销
+    context.subscriptions.push(command1, command2);
 }
 
-// This method is called when your extension is deactivated
+// 功能一
+function featureOne() {
+    vscode.window.showInformationMessage('Feature One is running!');
+}
+
+// 功能二
+function featureTwo() {
+    vscode.window.showInformationMessage('Feature Two is running!');
+}
+
 export function deactivate() {}
