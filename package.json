@@ -32,6 +32,16 @@
           "id": "helloworld-view-container",
           "title": "Helloworld",
           "icon": "src/static/image/stock.svg"
+        },            
+        {
+          "id": "optionOneContainer",
+          "title": "Option One",
+          "icon": "src/static/image/stock.svg"
+        },
+        {
+          "id": "optionTwoContainer",
+          "title": "Option Two",
+          "icon": "src/static/image/stock.svg"
         }
       ]
     },
@@ -40,6 +50,18 @@
         {
           "id": "helloworld-view",
           "name": "Helloworld View"
+        }
+      ],
+      "optionOneContainer": [
+        {
+            "id": "viewOne",
+            "name": "View One"
+        }
+      ],
+      "optionTwoContainer": [
+        {
+            "id": "viewTwo",
+            "name": "View Two"
         }
       ]
     }
